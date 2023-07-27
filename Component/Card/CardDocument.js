@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import { DiGoogleDrive } from 'react-icons/Di';
+import { DiGoogleDrive } from 'react-icons/di';
 import Link from 'next/link';
 
 
