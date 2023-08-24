@@ -28,7 +28,7 @@ justify-content:center;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
   }
   h2{
-    font-size: 32px;
+    font-size: 28px;
 font-style: normal;
 font-weight: 400;
 line-height: 30px;
@@ -66,13 +66,13 @@ gap: 8px;
 flex-shrink: 0;
 `
 
-const CardDocument = () => {
+const CardDocument2 = () => {
 
-    const fileLink = 'https://docs.google.com/document/d/1WiOJP1aE3EcjFtlnoPtd26bju0dbJW69/edit?usp=sharing&ouid=105049717607981766933&rtpof=true&sd=true';
+    const fileLink = 'https://drive.google.com/file/d/1dBszr1MEoTMeYFNISMjtX4mWIYthXLAv/view?usp=sharing';
 
   return (
     <StyledCont>
-      <h2>Política turística</h2>
+      <h2>ORDENANZA No 084/2.020</h2>
       <StyledLink href={fileLink} download>
         <StyledBtn><DiGoogleDrive/> Leer</StyledBtn>
       </StyledLink>
@@ -80,4 +80,4 @@ const CardDocument = () => {
   )
 }
 
-export default CardDocument
+export default CardDocument2
