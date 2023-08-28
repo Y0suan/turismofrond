@@ -15,9 +15,9 @@ const Footer = () => {
             <NavLink href={'/Gastronomia'} >Gastronomia</NavLink>
             <NavLink href={'/Imperdible'} >Imperdible</NavLink>
         </ContLink> 
-        <ContLink>
-            <IconLink href={'/'} ><BiLogoFacebook/></IconLink>
-            <IconLink href={'/'} ><BiLogoInstagram/></IconLink>
+        <ContLink> 
+            <IconLink href={'https://www.facebook.com/turismo.eldorado?mibextid=ZbWKwL'} target='_blank' ><BiLogoFacebook/></IconLink>
+            <IconLink href={'https://www.instagram.com/turismo.eldorado/?igshid=MzRlODBiNWFlZA%3D%3D'} target='_blank' ><BiLogoInstagram/></IconLink>
             <IconLink href={'/'} ><BiLogoWhatsapp/></IconLink>
         </ContLink>   
     </FootCont>
