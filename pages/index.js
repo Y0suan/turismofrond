@@ -4,6 +4,7 @@ import Natutales from "@/Component/Natutales";
 import Gastronomia from "@/Component/Gastronomia";
 import styled from 'styled-components';
 import Link from 'next/link';
+import Footer from "@/Component/Footer"; // Assuming Footer component is imported
 
 const LinksAdicionales = styled.div`
   border-top: 1px solid #CFC9D1;
@@ -117,8 +118,6 @@ export default function HomePage({ hoteles, cafes, kayak, cicloturismo, senderis
     </div>
   );
 }
-
-
 
 export async function getServerSideProps() {
   try {
