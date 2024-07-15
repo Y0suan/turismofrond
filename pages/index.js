@@ -4,7 +4,10 @@ import Natutales from "@/Component/Natutales";
 import Gastronomia from "@/Component/Gastronomia";
 import styled from 'styled-components';
 import Link from 'next/link';
-import Footer from "@/Component/Footer"; // Assuming Footer component is imported
+import Footer from "@/Component/Footer";
+import Kayak from '@/Component/Drops/Kayak'; // Import Kayak component
+import Senderismo from '@/Component/Drops/Senderismo'; // Import Senderismo component
+import Cicloturismo from '@/Component/Drops/Cicloturismo'; // Import Cicloturismo component
 
 const LinksAdicionales = styled.div`
   border-top: 1px solid #CFC9D1;
@@ -160,3 +163,4 @@ export async function getServerSideProps() {
     };
   }
 }
+
