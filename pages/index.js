@@ -4,7 +4,7 @@ import Header from "@/Component/Header";
 import Natutales from "@/Component/Natutales";
 import Gastronomia from "@/Component/Gastronomia";
 import styled from 'styled-components'
-
+import Link from 'next/link';
 
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
@@ -80,6 +80,19 @@ export default function HomePage({hoteles,cafes,kayak,cicloturismo,senderismo}){
       <Header/>
       {/* <Explora/> */}
       <Eldorado/>
+        <div className="flex items-center justify-center h-screen bg-gray-100">
+      <Link href="/target-page">
+        <a>
+          <Image
+            src="https://res.cloudinary.com/dzqdjsrez/image/upload/v1721049847/boton_expo_turismo_md395l.png"
+            alt="Botón Expo Turismo"
+            width={500} // Ajusta el ancho según sea necesario
+            height={300} // Ajusta la altura según sea necesario
+            className="cursor-pointer"
+          />
+        </a>
+      </Link>
+    </div>
       <Natutales naturales={hoteles} />
       <Gastronomia naturales={cafes} />
 
