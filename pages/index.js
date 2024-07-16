@@ -80,19 +80,12 @@ export default function HomePage({hoteles,cafes,kayak,cicloturismo,senderismo}){
       <Header/>
       {/* <Explora/> */}
       <Eldorado/>
-        <div className="flex items-center justify-center h-screen bg-gray-100">
-      <Link href="/target-page">
-        
-          <img
-            src="https://res.cloudinary.com/dzqdjsrez/image/upload/v1721049847/boton_expo_turismo_md395l.png"
-            alt="Botón Expo Turismo"
-            width={100%} // Ajusta el ancho según sea necesario
-             // Ajusta la altura según sea necesario
-            className="cursor-pointer"
-          />
-        
-      </Link>
-    </div>
+<div className="w-full h-full" >
+    <Link href="https://eldorado.gob.ar">
+        <img className="w-full " src="https://eldorado.gob.ar/img/expo-button.png" alt="Expo Button" />
+    </Link>
+</div>
+
       <Natutales naturales={hoteles} />
       <Gastronomia naturales={cafes} />
 
@@ -181,6 +174,5 @@ export async function getServerSideProps() {
     };
   }
 }
-
 
 
