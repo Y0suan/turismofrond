@@ -80,9 +80,9 @@ export default function HomePage({hoteles,cafes,kayak,cicloturismo,senderismo}){
       <Header/>
       {/* <Explora/> */}
       <Eldorado/>
-<div className="w-[100%] h-auto " >
+<div className="w-[100%] h-44 " >
     <Link href="https://eldorado.gob.ar">
-        <img className="w-[90%] h-auto" src="https://eldorado.gob.ar/img/expo-button.png" alt="Expo Button" />
+        <img className="w-[90%] h-44" src="https://eldorado.gob.ar/img/expo-button.png" alt="Expo Button" />
     </Link>
 </div>
 
