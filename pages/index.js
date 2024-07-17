@@ -23,7 +23,14 @@ import Cicloturismo from '@/Component/Drops/Cicloturismo';
 import Footer from "@/Component/footer";
 
 
-
+const Imagen = styled.div`
+width: 100%;
+height: auto;
+img{
+width:100%;
+margin:5px;
+}
+`
 const LinksAdicionales = styled.div`
 border-top: 1px solid #CFC9D1;
 width: 100%;
@@ -68,6 +75,7 @@ display: none;
     border-radius: 8px;
   }
 }
+  
 
 }
 `;
@@ -80,11 +88,11 @@ export default function HomePage({hoteles,cafes,kayak,cicloturismo,senderismo}){
       <Header/>
       {/* <Explora/> */}
       <Eldorado/>
-<div className="max-w-[1000px]  " >
-    <Link href="https://eldorado.gob.ar">
-        <img className="w-[90%] h-auto " src="https://eldorado.gob.ar/img/expo-button.png" alt="Expo Button" />
+<Imagen className=" " >
+    <Link className="  " href="https://eldorado.gob.ar">
+        <img className="img" src="https://res.cloudinary.com/dzqdjsrez/image/upload/v1721210501/expo_institucional_umbhtz.jpg" alt="Expo Button" />
     </Link>
-</div>
+</Imagen>
 
       <Natutales naturales={hoteles} />
       <Gastronomia naturales={cafes} />
@@ -174,5 +182,8 @@ export async function getServerSideProps() {
     };
   }
 }
+
+
+
 
 
